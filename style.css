@@ -44,3 +44,46 @@ footer {
     background-color: #1f2937;
     color: white;
 }
+.about-page-image {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+nav {
+    background-color: #111827;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #374151;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
