@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Confirmation page for the COP4813 information form created by Ethan Pierce.">
+    <meta name="author" content="Ethan Pierce">
+
+    <title>Confirm Information | Ethan Pierce</title>
+
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+
+<body>
+
+    <header>
+        <h1>Confirm Your Information</h1>
+        <p>COP4813 Web Programming</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Please Review Your Information</h2>
+
+            <p>
+                Check the information below before confirming your submission.
+            </p>
+
+            <div class="confirmation-box">
+                <p>
+                    <strong>Name:</strong>
+                    <span id="confirmName"></span>
+                </p>
+
+                <p>
+                    <strong>Address:</strong>
+                    <span id="confirmAddress"></span>
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    <span id="confirmPhone"></span>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <span id="confirmEmail"></span>
+                </p>
+
+                <p>
+                    <strong>Birth Date:</strong>
+                    <span id="confirmBirthdate"></span>
+                </p>
+
+                <p>
+                    <strong>Message:</strong>
+                </p>
+
+                <p id="confirmMessage" class="confirmation-message"></p>
+            </div>
+
+            <div class="confirmation-buttons">
+                <button type="button" id="backButton">
+                    Go Back and Edit
+                </button>
+
+                <button type="button" id="confirmButton">
+                    Confirm and Email
+                </button>
+            </div>
+
+            <p
+                id="confirmationError"
+                class="form-error"
+                aria-live="polite"
+            ></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Ethan Pierce</p>
+    </footer>
+
+    <script src="confirmation.js"></script>
+
+</body>
+</html>
