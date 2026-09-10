@@ -97,9 +97,8 @@ form.addEventListener("submit", function (event) {
     }
 
     if (!["19", "21"].includes(security)) {
-    showError("The security question is incorrect.");
-    return;
-}
+        showError("The security question is incorrect.");
+        return;
     }
 
     const formData = {
