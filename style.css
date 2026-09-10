@@ -1,64 +1,30 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
-    color: #222;
+    background: linear-gradient(135deg, #eef2ff, #f5f3ff, #ecfeff);
+    color: #1f2937;
 }
 
 header {
-    background-color: #1f2937;
+    background: linear-gradient(135deg, #1e3a8a, #6d28d9);
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 35px 20px;
 }
 
-main {
-    width: 80%;
-    max-width: 1000px;
-    margin: 30px auto;
-    background-color: white;
-    padding: 25px;
-    border-radius: 10px;
+header h1 {
+    margin-bottom: 8px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    margin: 10px;
-    border-radius: 8px;
+header p {
+    margin: 0;
+    font-size: 1.1rem;
 }
 
-a {
-    color: #2563eb;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-    background-color: #1f2937;
-    color: white;
-}
-.about-page-image {
-    display: block;
-    max-width: 500px;
-    width: 100%;
-    height: auto;
-    margin: 20px auto;
-    border-radius: 10px;
-}
-
-section {
-    margin-bottom: 50px;
-}
 nav {
     background-color: #111827;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 nav ul {
@@ -74,16 +40,191 @@ nav li {
 nav a {
     display: block;
     color: white;
-    padding: 14px 20px;
+    padding: 14px 22px;
     text-decoration: none;
+    transition: background-color 0.2s ease;
 }
 
 nav a:hover,
 nav a:focus {
-    background-color: #374151;
+    background-color: #4f46e5;
 }
+
+main {
+    width: 80%;
+    max-width: 1000px;
+    margin: 35px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    color: #4338ca;
+    border-bottom: 2px solid #c4b5fd;
+    padding-bottom: 8px;
+}
+
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+
+.profile-image,
+.about-page-image {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styling */
+
+form {
+    max-width: 750px;
+    margin: 30px auto;
+}
+
+fieldset {
+    border: 1px solid #c4b5fd;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 25px;
+    background: linear-gradient(135deg, #fafafa, #f5f3ff);
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4338ca;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border: 1px solid #a5b4fc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #c4b5fd;
+    border-color: #4f46e5;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    border: none;
     border-radius: 8px;
+    padding: 13px 22px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover,
+button:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(79, 70, 229, 0.3);
+}
+
+.form-error {
+    color: #b91c1c;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.assignment-list li {
+    margin: 12px 0;
+    padding: 12px;
+    background-color: #eef2ff;
+    border-left: 4px solid #6366f1;
+    border-radius: 6px;
+}
+
+.confirmation-box {
+    background: linear-gradient(135deg, #eef2ff, #faf5ff);
+    border: 1px solid #c4b5fd;
+    border-radius: 10px;
+    padding: 22px;
+    margin: 25px 0;
+}
+
+.confirmation-message {
+    white-space: pre-wrap;
+}
+
+.confirmation-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+    background: linear-gradient(135deg, #1e293b, #312e81);
+    color: white;
+}
+
+/* Mobile Layout */
+
+@media (max-width: 600px) {
+    main {
+        width: 90%;
+        padding: 18px;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    nav a {
+        padding: 12px;
+    }
+
+    header {
+        padding: 28px 15px;
+    }
 }
