@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="JavaScript damped oscillation calculator and plotting assignment for COP4813.">
+    <meta name="author" content="Ethan Pierce">
+
+    <title>Assignment 4 | Damped Oscillation Calculator</title>
+
+    <link rel="stylesheet" href="style.css?v=4">
+
+    <script src="https://cdn.jsdelivr.net/npm/highcharts@12/highcharts.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Damped Oscillation Calculator</h1>
+        <p>COP4813 Assignment 4</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="plot.html">Plot Calculator</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Damped Oscillation Equation</h2>
+
+            <p>
+                This calculator uses the equation
+                <strong>y = A × e<sup>-bx</sup> × cos(wx)</strong>.
+            </p>
+
+            <p>
+                Enter values for amplitude, damping, frequency, and the range
+                of x-values to calculate and graph the results.
+            </p>
+        </section>
+
+        <section>
+            <h2>Calculator Inputs</h2>
+
+            <form id="plotForm">
+
+                <label for="amplitude">Amplitude (A)</label>
+                <input
+                    type="number"
+                    id="amplitude"
+                    value="10"
+                    step="any"
+                    required
+                >
+
+                <label for="damping">Damping Factor (b)</label>
+                <input
+                    type="number"
+                    id="damping"
+                    value="0.15"
+                    step="any"
+                    required
+                >
+
+                <label for="frequency">Angular Frequency (w)</label>
+                <input
+                    type="number"
+                    id="frequency"
+                    value="2"
+                    step="any"
+                    required
+                >
+
+                <label for="xMin">X Minimum</label>
+                <input
+                    type="number"
+                    id="xMin"
+                    value="0"
+                    step="any"
+                    required
+                >
+
+                <label for="xMax">X Maximum</label>
+                <input
+                    type="number"
+                    id="xMax"
+                    value="20"
+                    step="any"
+                    required
+                >
+
+                <label for="stepSize">Step Size</label>
+                <input
+                    type="number"
+                    id="stepSize"
+                    value="0.1"
+                    step="any"
+                    min="0.01"
+                    required
+                >
+
+                <button type="submit">
+                    Calculate and Plot
+                </button>
+
+            </form>
+
+            <p
+                id="plotError"
+                class="form-error"
+                aria-live="polite"
+            ></p>
+        </section>
+
+        <section>
+            <h2>Calculated Values</h2>
+
+            <div id="outputValues">
+                <p>Click "Calculate and Plot" to display values.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Plot</h2>
+
+            <div id="chartContainer"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by Ethan Pierce</p>
+    </footer>
+
+    <script src="plot.js?v=4"></script>
+
+</body>
+</html>
