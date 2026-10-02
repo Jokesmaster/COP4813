@@ -251,3 +251,34 @@ footer {
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 25px;
+}
+
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.inventory-table th,
+.inventory-table td {
+    padding: 12px;
+    border: 1px solid #c4b5fd;
+    text-align: left;
+}
+
+.inventory-table th {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+}
+
+.inventory-table tr:nth-child(even) {
+    background-color: #f5f3ff;
+}
+
+.inventory-table tr:hover {
+    background-color: #eef2ff;
+}
