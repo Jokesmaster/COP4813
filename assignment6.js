@@ -1,3 +1,4 @@
+// hi
 const inventoryContainer = document.getElementById("inventoryContainer");
 const jsonError = document.getElementById("jsonError");
 
