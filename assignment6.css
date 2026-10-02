@@ -1,8 +1,7 @@
-/* Assignment 6 stylesheet */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #eef2ff;
+    background: linear-gradient(135deg, #eef2ff, #f5f3ff, #ecfeff);
     color: #1f2937;
 }
 
@@ -10,7 +9,16 @@ header {
     background: linear-gradient(135deg, #1e3a8a, #6d28d9);
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.1rem;
 }
 
 nav {
@@ -35,48 +43,75 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
     background-color: #4f46e5;
 }
 
 main {
-    width: 85%;
-    max-width: 1100px;
-    margin: 30px auto;
+    width: 88%;
+    max-width: 1200px;
+    margin: 35px auto;
     background-color: white;
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #4338ca;
+    border-bottom: 2px solid #c4b5fd;
+    padding-bottom: 8px;
 }
 
 .table-container {
     width: 100%;
     overflow-x: auto;
     margin-top: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
 .inventory-table {
     width: 100%;
     border-collapse: collapse;
+    background-color: white;
 }
 
 .inventory-table th,
 .inventory-table td {
-    border: 1px solid #c4b5fd;
-    padding: 12px;
+    padding: 14px 16px;
+    border-bottom: 1px solid #e5e7eb;
     text-align: left;
 }
 
 .inventory-table th {
-    background-color: #4f46e5;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
     color: white;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
 }
 
 .inventory-table tr:nth-child(even) {
-    background-color: #f5f3ff;
+    background-color: #f8f7ff;
 }
 
 .inventory-table tr:hover {
     background-color: #eef2ff;
+}
+
+.inventory-table td:nth-child(5),
+.inventory-table td:nth-child(6) {
+    font-family: Consolas, monospace;
+}
+
+.stattrak-yes {
+    color: #d97706;
+    font-weight: bold;
+}
+
+.stattrak-no {
+    color: #6b7280;
 }
 
 .form-error {
@@ -86,8 +121,25 @@ main {
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 22px;
     margin-top: 30px;
-    background-color: #1f2937;
+    background: linear-gradient(135deg, #1e293b, #312e81);
     color: white;
+}
+
+@media (max-width: 700px) {
+    main {
+        width: 92%;
+        padding: 18px;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    .inventory-table th,
+    .inventory-table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
 }
