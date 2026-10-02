@@ -1,5 +1,14 @@
 [
     {
+        "weapon": "Butterfly Knife",
+        "skin": "Gamma Doppler",
+        "condition": "Factory New",
+        "variant": "Phase 4",
+        "stattrak": false,
+        "float": 0.0170613341033,
+        "paintSeed": 16
+    },
+    {
         "weapon": "SSG 08",
         "skin": "Parallax",
         "condition": "Factory New",
