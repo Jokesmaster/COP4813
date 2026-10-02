@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="COP4813 Assignment 6 displaying Counter-Strike inventory data from an external JSON file.">
+    <meta name="author" content="Ethan Pierce">
+
+    <title>Assignment 6 | JSON Inventory</title>
+
+   <link rel="stylesheet" href="assignment6.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CS2 Inventory JSON Viewer</h1>
+        <p>COP4813 Assignment 6</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="plot.html">Plot Calculator</a></li>
+            <li><a href="spirograph.html">Spirograph</a></li>
+            <li><a href="assignment6.html">JSON Inventory</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>My CS2 Inventory</h2>
+
+            <p>
+                This page loads inventory information from an external JSON file
+                and displays it dynamically using JavaScript.
+            </p>
+
+            <div id="inventoryContainer">
+                <p>Loading inventory data...</p>
+            </div>
+
+            <p
+                id="jsonError"
+                class="form-error"
+                aria-live="polite"
+            ></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Ethan Pierce</p>
+    </footer>
+
+    <script src="assignment6.js?v=6"></script>
+
+</body>
+</html>
