@@ -1,0 +1,109 @@
+[
+    {
+        "weapon": "SSG 08",
+        "skin": "Parallax",
+        "condition": "Factory New",
+        "stattrak": true,
+        "float": 0.0642744451761,
+        "paintSeed": 1000
+    },
+    {
+        "weapon": "AWP",
+        "skin": "Hyper Beast",
+        "stattrak": true,
+        "float": 0.1499787420034,
+        "paintSeed": 269
+    },
+    {
+        "weapon": "AK-47",
+        "skin": "First Class",
+        "condition": "Minimal Wear",
+        "stattrak": false,
+        "float": 0.076189532876,
+        "paintSeed": 652
+    },
+    {
+        "weapon": "M4A4",
+        "skin": "Full Throttle",
+        "stattrak": true,
+        "float": 0.3488797545433,
+        "paintSeed": 226
+    },
+    {
+        "weapon": "M4A1-S",
+        "skin": "Solitude",
+        "stattrak": false,
+        "float": 0.000085141015,
+        "paintSeed": 566
+    },
+    {
+        "weapon": "Glock-18",
+        "skin": "Gamma Doppler",
+        "stattrak": false,
+        "float": 0.1744293123484,
+        "paintSeed": 680
+    },
+    {
+        "weapon": "P250",
+        "skin": "Franklin",
+        "stattrak": false,
+        "float": 0.0698803067207,
+        "paintSeed": 49
+    },
+    {
+        "weapon": "Moto Gloves",
+        "skin": "Turtle",
+        "stattrak": false,
+        "float": 0.1293374598026,
+        "paintSeed": 10
+    },
+    {
+        "weapon": "Driver Gloves",
+        "skin": "Hand Sweaters",
+        "stattrak": false,
+        "float": 0.3673546016216,
+        "paintSeed": 876
+    },
+    {
+        "weapon": "Desert Eagle",
+        "skin": "Starcade",
+        "stattrak": false,
+        "float": 0.1415334492922,
+        "paintSeed": 893
+    },
+    {
+        "weapon": "USP-S",
+        "skin": "Purple DDPAT",
+        "stattrak": false,
+        "float": 0.0646691992879,
+        "paintSeed": 627
+    },
+    {
+        "weapon": "XM1014",
+        "skin": "Jungle",
+        "stattrak": false,
+        "float": 0.1353417336941,
+        "paintSeed": 311
+    },
+    {
+        "weapon": "Sawed-Off",
+        "skin": "Wasteland Princess",
+        "stattrak": true,
+        "float": 0.3268907666206,
+        "paintSeed": 802
+    },
+    {
+        "weapon": "MAG-7",
+        "skin": "Seagull",
+        "stattrak": false,
+        "float": 0.0486744791269,
+        "paintSeed": 598
+    },
+    {
+        "weapon": "Five-SeveN",
+        "skin": "Kami",
+        "stattrak": false,
+        "float": 0.0584611184895,
+        "paintSeed": 868
+    }
+]
