@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="HTML5 JavaScript drag and drop assignment for Ethan Pierce's COP4813 web programming course.">
+    <meta name="author" content="Ethan Pierce">
+
+    <title>Drag and Drop | COP4813</title>
+
+    <link rel="stylesheet" href="style.css?v=7">
+</head>
+
+<body>
+
+    <header>
+        <h1>Park the Car</h1>
+        <p>COP4813 Drag and Drop Assignment</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="plot.html">Plot Calculator</a></li>
+            <li><a href="spirograph.html">Spirograph</a></li>
+            <li><a href="assignment6.html">JSON Inventory</a></li>
+            <li><a href="dragdrop.html">Drag & Drop</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Drag the Car Into the Garage</h2>
+
+            <p>
+                Drag the car image below into the garage.
+                When the car is successfully dropped, JavaScript will trigger
+                an event and display a confirmation message.
+            </p>
+
+            <div class="drag-area">
+
+                <div class="car-container">
+                    <h3>Your Car</h3>
+
+                    <img
+                        src="images/serana.jpeg"
+                        id="dragCar"
+                        class="draggable-car"
+                        draggable="true"
+                        alt="Car that can be dragged into the garage"
+                    >
+                </div>
+
+                <div
+                    id="garage"
+                    class="garage-drop-zone"
+                    role="region"
+                    aria-label="Garage drop zone"
+                >
+                    <h3>Garage</h3>
+                    <p>Drop the car here!</p>
+                </div>
+
+            </div>
+
+            <p
+                id="dropMessage"
+                class="drop-message"
+                aria-live="polite"
+            >
+                The car has not been parked yet.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by Ethan Pierce</p>
+    </footer>
+
+    <script src="dragdrop.js?v=7"></script>
+
+</body>
+</html>

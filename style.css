@@ -282,3 +282,70 @@ footer {
 .inventory-table tr:hover {
     background-color: #eef2ff;
 }
+.drag-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.car-container,
+.garage-drop-zone {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.draggable-car {
+    width: 100%;
+    max-width: 400px;
+    cursor: grab;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.draggable-car:active {
+    cursor: grabbing;
+}
+
+.garage-drop-zone {
+    min-height: 300px;
+    border: 4px dashed #6366f1;
+    border-radius: 14px;
+    background-color: #eef2ff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease,
+                border-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.garage-hover {
+    background-color: #ddd6fe;
+    border-color: #7c3aed;
+    transform: scale(1.02);
+}
+
+.garage-success {
+    background-color: #dcfce7;
+    border-color: #16a34a;
+}
+
+.parked-car {
+    max-width: 350px;
+    margin-top: 15px;
+}
+
+.drop-message {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f5f3ff;
+    border-left: 4px solid #6366f1;
+    border-radius: 6px;
+    font-weight: bold;
+}
