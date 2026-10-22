@@ -348,4 +348,29 @@ footer {
     border-left: 4px solid #6366f1;
     border-radius: 6px;
     font-weight: bold;
+}/* Assignment 9 - Animation */
+
+.animation-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#animationCanvas {
+    width: 100%;
+    max-width: 800px;
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e1b4b,
+        #312e81
+    );
+
+    border: 4px solid #6366f1;
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.2);
+
+    cursor: crosshair;
 }

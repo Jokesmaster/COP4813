@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="HTML5 Canvas animation assignment for Ethan Pierce's COP4813 Web Programming course.">
+    <meta name="author" content="Ethan Pierce">
+
+    <title>Assignment 9 - Animation | COP4813</title>
+
+    <link rel="stylesheet" href="style.css?v=9">
+</head>
+
+<body>
+
+    <header>
+        <h1>Assignment 9 - Animation</h1>
+        <p>Interactive HTML5 Canvas Animation</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="plot.html">Plot Calculator</a></li>
+            <li><a href="spirograph.html">Spirograph</a></li>
+            <li><a href="assignment6.html">JSON Inventory</a></li>
+            <li><a href="dragdrop.html">Drag & Drop</a></li>
+            <li><a href="animation.html">Animation</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Bouncing Neon Ball</h2>
+
+            <p>
+                The ball below moves diagonally across the canvas and
+                bounces whenever it reaches an edge.
+            </p>
+
+            <p>
+                <strong>Click directly on the ball!</strong>
+                It will change color, reverse direction, and create
+                an explosion effect.
+            </p>
+
+            <div class="animation-container">
+
+                <canvas
+                    id="animationCanvas"
+                    width="800"
+                    height="500"
+                    aria-label="Interactive bouncing ball animation"
+                >
+                    Your browser does not support HTML5 Canvas.
+                </canvas>
+
+            </div>
+
+            <p id="animationMessage" class="drop-message" aria-live="polite">
+                Click the bouncing ball to trigger an event.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by Ethan Pierce</p>
+    </footer>
+
+    <script src="animation.js?v=1"></script>
+
+</body>
+</html>
