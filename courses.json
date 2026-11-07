@@ -1,0 +1,294 @@
+{
+    "program": "Bachelor of Science in Information Technology",
+    "school": "Daytona State College",
+    "catalogYear": "2025-2026",
+    "courses": [
+        {
+            "code": "MAC1105",
+            "name": "College Algebra",
+            "credits": 3,
+            "category": "Mathematics",
+            "prerequisites": {
+                "all": [],
+                "any": []
+            },
+            "choiceGroup": null,
+            "note": "Foundational mathematics course."
+        },
+        {
+            "code": "STA2023",
+            "name": "Elementary Statistics",
+            "credits": 3,
+            "category": "Mathematics",
+            "prerequisites": {
+                "all": [],
+                "any": []
+            },
+            "choiceGroup": "statistics",
+            "note": "Students select a statistics option. STA2023 or EGN3443 may satisfy this requirement."
+        },
+        {
+            "code": "EGN3443",
+            "name": "Probability and Statistics for Engineers",
+            "credits": 3,
+            "category": "Mathematics",
+            "prerequisites": {
+                "all": [],
+                "any": []
+            },
+            "choiceGroup": "statistics",
+            "note": "Preferred statistics option. Students do not need both STA2023 and EGN3443 for this requirement."
+        },
+        {
+            "code": "COT3100",
+            "name": "Discrete Analysis",
+            "credits": 3,
+            "category": "Mathematics",
+            "prerequisites": {
+                "all": [],
+                "any": []
+            },
+            "choiceGroup": "discrete",
+            "note": "Preferred discrete mathematics option."
+        },
+        {
+            "code": "MAD2104",
+            "name": "Discrete Mathematics",
+            "credits": 3,
+            "category": "Mathematics",
+            "prerequisites": {
+                "all": [],
+                "any": []
+            },
+            "choiceGroup": "discrete",
+            "note": "Students may select this course instead of COT3100 for the discrete mathematics requirement."
+        },
+        {
+            "code": "COP2800",
+            "name": "Computer Programming Java",
+            "credits": 3,
+            "category": "Programming",
+            "prerequisites": {
+                "all": [],
+                "any": []
+            },
+            "choiceGroup": "programming",
+            "note": "One programming course is required. Students may use COP2800, COP2220, or COP2360."
+        },
+        {
+            "code": "COP2220",
+            "name": "Computer Programming C",
+            "credits": 3,
+            "category": "Programming",
+            "prerequisites": {
+                "all": [],
+                "any": []
+            },
+            "choiceGroup": "programming",
+            "note": "One programming course is required. Students may use COP2220, COP2360, or COP2800."
+        },
+        {
+            "code": "COP2360",
+            "name": "C# Programming",
+            "credits": 3,
+            "category": "Programming",
+            "prerequisites": {
+                "all": [],
+                "any": []
+            },
+            "choiceGroup": "programming",
+            "note": "One programming course is required. Students may use COP2360, COP2220, or COP2800."
+        },
+        {
+            "code": "CET1112C",
+            "name": "Digital Fundamentals and Lab",
+            "credits": 3,
+            "category": "Technical Foundation",
+            "prerequisites": {
+                "all": [],
+                "any": []
+            },
+            "choiceGroup": "digital",
+            "note": "One digital technology requirement may be selected."
+        },
+        {
+            "code": "CET3116",
+            "name": "Digital Technology",
+            "credits": 3,
+            "category": "Technical Foundation",
+            "prerequisites": {
+                "all": [],
+                "any": []
+            },
+            "choiceGroup": "digital",
+            "note": "Preferred digital technology option."
+        },
+        {
+            "code": "CTS3348",
+            "name": "Linux Administration",
+            "credits": 3,
+            "category": "BSIT Core",
+            "prerequisites": {
+                "all": ["MAC1105"],
+                "any": []
+            },
+            "choiceGroup": null,
+            "note": "Linux administration course used as a prerequisite for additional BSIT courses."
+        },
+        {
+            "code": "COP3530",
+            "name": "Data Structures",
+            "credits": 3,
+            "category": "BSIT Core",
+            "prerequisites": {
+                "all": [],
+                "any": [
+                    ["COP2800", "COP2220", "COP2360"],
+                    ["COT3100", "MAD2104"]
+                ]
+            },
+            "choiceGroup": null,
+            "note": "Requires one programming course AND one discrete mathematics course."
+        },
+        {
+            "code": "CEN3722",
+            "name": "Human Computer Interfaces",
+            "credits": 3,
+            "category": "BSIT Core",
+            "prerequisites": {
+                "all": [],
+                "any": [
+                    ["COP2800", "COP2220", "COP2360"]
+                ]
+            },
+            "choiceGroup": null,
+            "note": "Requires COP2800, COP2220, OR COP2360."
+        },
+        {
+            "code": "COP4708",
+            "name": "Applied Database I",
+            "credits": 3,
+            "category": "BSIT Core",
+            "prerequisites": {
+                "all": [],
+                "any": [
+                    ["COP2800", "COP2220", "COP2360"]
+                ]
+            },
+            "choiceGroup": null,
+            "note": "Requires one approved programming course."
+        },
+        {
+            "code": "COP4610",
+            "name": "Operating Systems",
+            "credits": 3,
+            "category": "BSIT Core",
+            "prerequisites": {
+                "all": ["CTS3348"],
+                "any": []
+            },
+            "choiceGroup": null,
+            "note": "Requires CTS3348 Linux Administration."
+        },
+        {
+            "code": "CNT3104",
+            "name": "Introduction to Telecommunications",
+            "credits": 3,
+            "category": "Networking",
+            "prerequisites": {
+                "all": [],
+                "any": []
+            },
+            "choiceGroup": null,
+            "note": "Foundation networking course used as a prerequisite for CNT4007."
+        },
+        {
+            "code": "CNT4007",
+            "name": "Data and Computer Communications",
+            "credits": 3,
+            "category": "Networking",
+            "prerequisites": {
+                "all": ["CNT3104"],
+                "any": [
+                    ["STA2023", "EGN3443"]
+                ]
+            },
+            "choiceGroup": null,
+            "note": "Requires CNT3104 AND either STA2023 OR EGN3443."
+        },
+        {
+            "code": "CNT4703",
+            "name": "Voice and Data Network Design",
+            "credits": 3,
+            "category": "Networking",
+            "prerequisites": {
+                "all": ["CNT4007"],
+                "any": []
+            },
+            "choiceGroup": null,
+            "note": "Requires CNT4007 Data and Computer Communications."
+        },
+        {
+            "code": "CDA4101",
+            "name": "Computer Organization and Design",
+            "credits": 3,
+            "category": "BSIT Core",
+            "prerequisites": {
+                "all": [],
+                "any": [
+                    ["CET1112C", "CET3116"]
+                ]
+            },
+            "choiceGroup": null,
+            "note": "Requires CET1112C OR CET3116."
+        },
+        {
+            "code": "CEN4801",
+            "name": "Systems Integration",
+            "credits": 3,
+            "category": "BSIT Core",
+            "prerequisites": {
+                "all": ["COP4708", "COP3530"],
+                "any": []
+            },
+            "choiceGroup": null,
+            "note": "Requires BOTH COP4708 Applied Database I AND COP3530 Data Structures."
+        },
+        {
+            "code": "CEN4010",
+            "name": "Software Engineering",
+            "credits": 3,
+            "category": "BSIT Core",
+            "prerequisites": {
+                "all": ["COP3530"],
+                "any": []
+            },
+            "choiceGroup": null,
+            "note": "Requires COP3530 Data Structures."
+        },
+        {
+            "code": "COP4813",
+            "name": "Web Systems I",
+            "credits": 3,
+            "category": "Web Development",
+            "prerequisites": {
+                "all": ["COP3530"],
+                "any": []
+            },
+            "choiceGroup": null,
+            "note": "Requires COP3530 Data Structures."
+        },
+        {
+            "code": "CIS4510",
+            "name": "IT Project Management",
+            "credits": 3,
+            "category": "BSIT Core",
+            "prerequisites": {
+                "all": ["CEN4801"],
+                "any": []
+            },
+            "choiceGroup": null,
+            "note": "Requires CEN4801 Systems Integration."
+        }
+    ]
+}

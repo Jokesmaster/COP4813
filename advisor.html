@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Interactive BSIT course advising tool for COP4813 Assignment 11."
+    >
+    <meta name="author" content="Ethan Pierce">
+
+    <title>BSIT Quick Advisor | COP4813</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>BSIT Quick Advisor</h1>
+        <p>COP4813 Assignment 11 - Dynamic Objects</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="advisor.html">BSIT Advisor</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Daytona State College BSIT Advisor</h2>
+
+            <p>
+                Select courses you have already completed. The advisor will
+                automatically determine which additional courses you are
+                eligible to take based on prerequisite requirements.
+            </p>
+
+            <p>
+                Course cards, buttons, prerequisite information, and status
+                information on this page are dynamically generated from JSON
+                data using JavaScript.
+            </p>
+
+            <div class="advisor-summary">
+                <div>
+                    <strong>Completed:</strong>
+                    <span id="completedCount">0</span>
+                </div>
+
+                <div>
+                    <strong>Available:</strong>
+                    <span id="availableCount">0</span>
+                </div>
+
+                <div>
+                    <strong>Planned:</strong>
+                    <span id="plannedCount">0</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Course Advisor</h2>
+
+            <div class="advisor-legend">
+                <span class="legend-available">Available</span>
+                <span class="legend-locked">Prerequisites Needed</span>
+                <span class="legend-completed">Completed</span>
+            </div>
+
+            <div id="courseContainer" class="course-grid">
+                <p>Loading course data...</p>
+            </div>
+
+            <p id="advisorError" class="form-error" aria-live="polite"></p>
+        </section>
+
+        <section>
+            <h2>My Course Plan</h2>
+
+            <p>
+                Courses added to your plan will appear below.
+            </p>
+
+            <div id="planContainer" class="course-plan">
+                <p>No courses have been added to your plan yet.</p>
+            </div>
+
+            <button id="clearPlanButton" type="button">
+                Clear Course Plan
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by Ethan Pierce</p>
+    </footer>
+
+    <script src="advisor.js"></script>
+
+</body>
+</html>
