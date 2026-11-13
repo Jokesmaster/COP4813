@@ -1,0 +1,138 @@
+{
+    "systems": [
+        {
+            "name": "WordPress",
+            "support": "Free and open-source CMS maintained by the WordPress contributor community. Widely supported by commercial web hosting companies.",
+            "technology": "PHP server-side application using MySQL or MariaDB. Front end uses HTML, CSS, and JavaScript. Apache or Nginx are commonly used web servers.",
+            "capabilities": [
+                "Large theme ecosystem",
+                "Large plugin ecosystem",
+                "Block-based content editor",
+                "REST API",
+                "Multisite support",
+                "Custom themes and templates"
+            ],
+            "limitations": [
+                "Plugins and themes must be kept updated",
+                "Third-party plugin quality can vary",
+                "Large numbers of plugins can increase maintenance and performance requirements",
+                "Security depends partly on keeping WordPress, themes, and plugins current"
+            ],
+            "exampleName": "NASA",
+            "exampleUrl": "https://www.nasa.gov/",
+            "supportSource": "https://wordpress.org/",
+            "technologySource": "https://wordpress.org/about/requirements/",
+            "capabilitiesSource": "https://wordpress.org/documentation/",
+            "limitationsSource": "https://developer.wordpress.org/advanced-administration/security/",
+            "exampleSource": "https://wordpress.org/showcase/"
+        },
+        {
+            "name": "Drupal",
+            "support": "Free and open-source CMS supported by the Drupal community and Drupal Association.",
+            "technology": "PHP-based CMS. Supports MySQL, MariaDB, PostgreSQL, and SQLite databases. Runs on Apache, Nginx, and other compatible web servers.",
+            "capabilities": [
+                "Modules and themes",
+                "Highly structured custom content types",
+                "Built-in multilingual support",
+                "User roles and permissions",
+                "JSON:API and REST services",
+                "Content workflows and moderation"
+            ],
+            "limitations": [
+                "More configuration may be required than with simpler CMS platforms",
+                "Composer is commonly required for installation and updates",
+                "Modules can have additional PHP or configuration requirements",
+                "Major upgrades may require checking contributed module compatibility"
+            ],
+            "exampleName": "American English",
+            "exampleUrl": "https://americanenglish.state.gov/",
+            "supportSource": "https://www.drupal.org/about",
+            "technologySource": "https://www.drupal.org/docs/getting-started/system-requirements",
+            "capabilitiesSource": "https://www.drupal.org/docs/develop/core-modules-and-themes",
+            "limitationsSource": "https://www.drupal.org/docs/getting-started/system-requirements",
+            "exampleSource": "https://new.drupal.org/case-studies"
+        },
+        {
+            "name": "Joomla",
+            "support": "Free and open-source CMS supported by Open Source Matters and the Joomla community.",
+            "technology": "PHP-based CMS supporting MySQL, MariaDB, and PostgreSQL. Common web servers include Apache, Nginx, and Microsoft IIS.",
+            "capabilities": [
+                "Templates and template overrides",
+                "Thousands of extensions",
+                "Built-in multilingual support",
+                "Access Control Lists",
+                "SEO-friendly URLs",
+                "Content versioning",
+                "Menu and media management"
+            ],
+            "limitations": [
+                "Extensions and templates need compatibility checks during upgrades",
+                "Advanced customization may require PHP and Joomla-specific knowledge",
+                "Additional extensions can increase maintenance requirements",
+                "Server must meet supported PHP and database requirements"
+            ],
+            "exampleName": "Circuit Paul Ricard",
+            "exampleUrl": "https://www.circuitpaulricard.com/",
+            "supportSource": "https://www.joomla.org/about-joomla.html",
+            "technologySource": "https://manual.joomla.org/docs/next/get-started/technical-requirements/",
+            "capabilitiesSource": "https://www.joomla.org/about-joomla/core-features.html",
+            "limitationsSource": "https://manual.joomla.org/docs/next/get-started/technical-requirements/",
+            "exampleSource": "https://showcase.joomla.org/browse-sites.html"
+        },
+        {
+            "name": "Ghost",
+            "support": "Open-source publishing platform developed by the Ghost Foundation. It is available as self-hosted software or through the managed Ghost(Pro) service.",
+            "technology": "Node.js-based CMS. The recommended production stack uses Node.js, MySQL, Nginx, and Ubuntu Linux. Themes use HTML, CSS, JavaScript, and Handlebars.",
+            "capabilities": [
+                "Publishing and blogging",
+                "Email newsletters",
+                "Memberships and subscriptions",
+                "Custom themes",
+                "Content API and Admin API",
+                "Webhooks and third-party integrations",
+                "Headless CMS support"
+            ],
+            "limitations": [
+                "Primarily designed for publishing rather than general-purpose application development",
+                "Some advanced customizations require editing theme code",
+                "Self-hosting requires server administration",
+                "Headless implementations lose some built-in Ghost features unless they are recreated"
+            ],
+            "exampleName": "OpenAI",
+            "exampleUrl": "https://openai.com/news/",
+            "supportSource": "https://ghost.org/",
+            "technologySource": "https://docs.ghost.org/hosting/",
+            "capabilitiesSource": "https://ghost.org/integrations/",
+            "limitationsSource": "https://ghost.org/help/can-i-run-a-headless-site-with-ghost-pro/",
+            "exampleSource": "https://ghost.org/customers-and-themes/"
+        },
+        {
+            "name": "Strapi",
+            "support": "Open-source headless CMS developed by Strapi with community, cloud, and enterprise support options.",
+            "technology": "Node.js-based headless CMS. Supports SQLite, MySQL, MariaDB, and PostgreSQL databases. Content is normally delivered to a separate front end through APIs.",
+            "capabilities": [
+                "Headless content management",
+                "Custom content types",
+                "REST API",
+                "GraphQL support through plugins",
+                "Role-based access control",
+                "Internationalization",
+                "Customizable administration interface",
+                "Works with front-end frameworks such as React, Next.js, Vue, and others"
+            ],
+            "limitations": [
+                "Does not provide a traditional finished website front end",
+                "Developers must create or connect a separate presentation layer",
+                "NoSQL databases such as MongoDB are not supported in Strapi 5",
+                "Strapi does not support connecting applications directly to arbitrary pre-existing databases"
+            ],
+            "exampleName": "PostHog",
+            "exampleUrl": "https://posthog.com/",
+            "supportSource": "https://strapi.io/",
+            "technologySource": "https://docs.strapi.io/cms/configurations/database",
+            "capabilitiesSource": "https://docs.strapi.io/cms/intro",
+            "limitationsSource": "https://docs.strapi.io/cms/configurations/database",
+            "exampleSource": "https://strapi.io/user-stories"
+        }
+    ]
+}

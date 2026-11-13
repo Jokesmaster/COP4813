@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Comparison of five web content management systems for COP4813."
+    >
+    <meta name="author" content="Ethan Pierce">
+
+    <title>Content Management Systems | COP4813</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Content Management Systems</h1>
+        <p>COP4813 CMS Research Assignment</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="cms.html">CMS Comparison</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>CMS Comparison</h2>
+
+            <p>
+                This page compares five different Content Management Systems.
+                The CMS information is stored in an external JSON file and the
+                comparison table is dynamically generated using JavaScript.
+            </p>
+
+            <p>
+                The systems researched are WordPress, Drupal, Joomla, Ghost,
+                and Strapi. Each system was compared based on its support,
+                technology stack, capabilities, limitations, and an example
+                website using the CMS.
+            </p>
+
+            <div id="cmsContainer">
+                <p>Loading CMS data...</p>
+            </div>
+
+            <p
+                id="cmsError"
+                class="form-error"
+                aria-live="polite"
+            ></p>
+        </section>
+
+        <section>
+            <h2>Research Summary</h2>
+
+            <p>
+                The research showed that content management systems can serve
+                very different purposes. WordPress, Drupal, and Joomla are
+                traditional CMS platforms that can manage both the website
+                content and presentation. Ghost focuses heavily on publishing,
+                memberships, and newsletters, while Strapi takes a headless
+                approach where the CMS manages the content and a separate
+                application is responsible for displaying it.
+            </p>
+
+            <p>
+                The best CMS therefore depends on the requirements of the
+                website. A smaller content-based site may benefit from the
+                simplicity and large plugin ecosystem of WordPress, while a
+                more complex organization may benefit from Drupal's structured
+                content and permissions. Headless systems such as Strapi can
+                provide developers more freedom over the front end but also
+                require additional development.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by Ethan Pierce</p>
+    </footer>
+
+    <script src="cms.js"></script>
+
+</body>
+</html>
