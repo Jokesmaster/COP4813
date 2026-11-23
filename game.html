@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Educational IT troubleshooting game for COP4813."
+    >
+    <meta name="author" content="Ethan Pierce">
+
+    <title>IT Troubleshooter | COP4813</title>
+
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>IT Troubleshooter</h1>
+        <p>COP4813 Educational Game Prototype</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="game.html">IT Troubleshooter</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="game-intro">
+            <h2>How to Play</h2>
+
+            <p>
+                You will be given 10 common IT troubleshooting scenarios.
+                Choose the solution you think should be tried first.
+            </p>
+
+            <ul>
+                <li>Each correct answer earns 100 points.</li>
+                <li>Your streak increases when you answer correctly.</li>
+                <li>Wrong answers reset your streak.</li>
+                <li>Your final score will be displayed after 10 questions.</li>
+            </ul>
+        </section>
+
+        <section class="game-board">
+
+            <div class="score-panel">
+                <div>
+                    <span class="score-label">Score</span>
+                    <span id="score">0</span>
+                </div>
+
+                <div>
+                    <span class="score-label">Question</span>
+                    <span id="questionNumber">1 / 10</span>
+                </div>
+
+                <div>
+                    <span class="score-label">Streak</span>
+                    <span id="streak">0</span>
+                </div>
+            </div>
+
+            <div id="questionCard" class="question-card">
+                <p class="scenario-label">Troubleshooting Scenario</p>
+
+                <h2 id="questionText">
+                    Press Start Game to begin.
+                </h2>
+
+                <div id="answerContainer" class="answer-grid">
+                </div>
+            </div>
+
+            <div
+                id="feedback"
+                class="feedback"
+                aria-live="polite"
+            >
+            </div>
+
+            <div class="game-controls">
+                <button id="startButton" type="button">
+                    Start Game
+                </button>
+
+                <button
+                    id="nextButton"
+                    type="button"
+                    hidden
+                >
+                    Next Question
+                </button>
+
+                <button
+                    id="restartButton"
+                    type="button"
+                    hidden
+                >
+                    Play Again
+                </button>
+            </div>
+
+        </section>
+
+        <section
+            id="resultsSection"
+            class="results-section"
+            hidden
+        >
+            <h2>Game Complete</h2>
+
+            <p class="final-score">
+                Final Score:
+                <span id="finalScore">0</span>
+                / 1000
+            </p>
+
+            <p>
+                Correct Answers:
+                <strong id="correctAnswers">0</strong>
+            </p>
+
+            <p>
+                Incorrect Answers:
+                <strong id="incorrectAnswers">0</strong>
+            </p>
+
+            <p>
+                Rank:
+                <strong id="playerRank">Beginner</strong>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by Ethan Pierce</p>
+    </footer>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
